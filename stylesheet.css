@@ -74,6 +74,12 @@ header {
   height: 65px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
+  /* Ubah position ke fixed, dan top ke 0 */
+  position: fixed;
+  top: 0;
+  
+  /* Ubah z-index ke 10 */
+  z-index: 10;
 }
 
 .logo {
@@ -143,23 +149,38 @@ header {
   color: #b3aeb5;
 }
 
-/* Tambahkan CSS untuk message-wrapper */
+.heading h3 {
+  font-weight: normal;
+}
+
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
 }
 
-
 .message {
   padding: 15px 40px;
   background-color: #5dca88;
-  /* Ubah property cursor ke pointer */
-  
-  /* Ubah property box-shadow */
-  
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
 }
 
-.heading h3 {
-  font-weight: normal;
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
 }
